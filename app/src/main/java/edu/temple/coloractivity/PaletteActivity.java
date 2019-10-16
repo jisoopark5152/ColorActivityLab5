@@ -2,6 +2,7 @@ package edu.temple.coloractivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -9,13 +10,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
-public class ColorActivity extends AppCompatActivity {
+public class PaletteActivity extends AppCompatActivity {
+    Resources res = [context.]getResources();
+    String[] gridLabels = res.getStringArray(R.array.my_array);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("ColorActivity");
+        setTitle("PaletteActivity");
         Spinner spinner =findViewById(R.id.spinner);
 
         TypedArray ta = getResources().obtainTypedArray(R.array.colors);

@@ -12,4 +12,16 @@
         <item>#ff00ff</item>
         <item>#ff007f</item>
     </array>
+    <string-array name="color_name">
+        <item>White</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Violet</item>
+        <item>Pink</item>
+    </string-array>
 </resources>
